@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,13 +18,96 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "btn-primary": "#FF4240",
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
-  <body>
-    <h1>testing. . . .</h1>
+  <body class="font-manrope">
+    <header class="container mx-auto mt-12">
+      <!-- nav -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-[#131318]"
+              >Hockey<span class="text-btn-primary">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 font-normal gap-11 text-[#424247]"
+            >
+              <li class="text-btn-primary font-bold"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-6">
+            <div class="hidden lg:flex items-center w-6 h-6">
+              <i
+                class="fa-solid fa-magnifying-glass text-[#424247] cursor-pointer"
+              ></i>
+            </div>
+            <a
+              class="bg-btn-primary rounded-lg cursor-pointer px-3 lg:px-6 py-2 lg:py-4 text-white text-lg lg:text-xl font-bold"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
