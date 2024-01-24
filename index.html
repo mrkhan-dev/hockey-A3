@@ -79,8 +79,8 @@
               </ul>
             </div>
             <a
-              class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-[#131318]"
-              >Hockey<span class="text-btn-primary">’</span>s</a
+              class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-[#131318] gap-0"
+              >Hockey<span class="text-btn-primary gap-0">’</span>s</a
             >
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -493,14 +493,15 @@
         </div>
       </section>
       <!-- get in touch -->
-      <section class="mt-24  border-dashed border-t-2 border-public py-8">
+      <section class="mt-24 border-dashed border-t-2 border-public py-8">
         <h2 class="text-center text-4xl font-extrabold">Get In Touch</h2>
-        <p class="text-para-color text-center mt-6">
+        <p class="text-para-color text-center mt-6 border-dashed border-b-2 border-public pb-8">
           Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. 
         </p> 
         <!-- contact section -->
-        <div class="flex flex-col lg:flex-row gap-6">
+        <div class="flex flex-col lg:flex-row gap-20 mt-12">
           <div class="c1 border border-public rounded-xl px-5 py-5 lg:p-12 ">
+            <!-- c 1 -->
             <div class="card-compact bg-[#BCED6D1A] rounded-xl mb-6">
            <img src="./Images/Group 1171275317.png" class="ml-5 pt-8" /> 
               <div class="card-body lg:w-[400px]">
@@ -508,18 +509,20 @@
                 <p class="font-extrabold text-lg pb-12 text-[#131318]">(+62) 123-321-543</p>
               </div>
             </div>
+            <!-- c 2 -->
             <div class="card-compact bg-[#FDDD5F1A] rounded-xl mb-6">
-           <img src="./Images/Group 1171275317.png" class="ml-5 pt-8" /> 
+           <img src="./Images/Group 1171275318.png" class="ml-5 pt-8" /> 
               <div class="card-body lg:w-[400px]">
-                <p class="text-para-color pt-6">Phone Number :</p> 
-                <p class="font-extrabold text-lg pb-12 text-[#131318]">(+62) 123-321-543</p>
+                <p class="text-para-color pt-6">Email :</p> 
+                <p class="font-extrabold text-lg pb-12 text-[#131318]">hockeys@support.com</p>
               </div>
             </div>
+            <!-- c 3 -->
             <div class="card-compact bg-[#629CF31A] rounded-xl ">
-           <img src="./Images/Group 1171275317.png" class="ml-5 pt-8" /> 
+           <img src="./Images/Group 1171275321.png" class="ml-5 pt-8" /> 
               <div class="card-body lg:w-[400px]">
-                <p class="text-para-color pt-6">Phone Number :</p> 
-                <p class="font-extrabold text-lg pb-12 text-[#131318]">(+62) 123-321-543</p>
+                <p class="text-para-color pt-6">Location :</p> 
+                <p class="font-extrabold text-lg pb-12 text-[#131318]">152/1 Mohakhali Wireless Gate</p>
               </div>
             </div>
           </div>
@@ -528,41 +531,60 @@
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div>
                   <label for="input" class="block text-xl font-bold text-[#131318]">Your Name</label> 
-                  <input type="text" id="input" class=" block p-5 rounded-xl w-full mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter Your Full Name">               
-                  <label for="input" class="block text-xl font-bold text-[#131318]">Your Name</label> 
-                  <input type="text" id="input" class=" block p-5 rounded-xl w-full mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter Your Full Name">               
+                  <input type="text" id="input" class="outline-none block p-5 rounded-xl w-full mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter your name">               
+                  <label for="input" class="block text-xl font-bold text-[#131318] mt-6">Subject</label> 
+                  <input type="text" id="input" class="outline-none block p-5 rounded-xl w-full mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter your subject">               
               </div>
               <div>
-                <label for="input" class="block text-xl font-bold text-[#131318]">Your Name</label> 
-                <input type="text" id="input" class=" block p-5 rounded-xl w-full mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter Your Full Name">               
-                <label for="input" class="block text-xl font-bold text-[#131318]">Your Name</label> 
-                <input type="text" id="input" class=" block p-5 rounded-xl w-full lg:w-[324px] mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter Your Full Name"> 
+                <label for="input" class="block text-xl font-bold text-[#131318]">Your Email</label> 
+                <input type="text" id="input" class="outline-none block p-5 rounded-xl w-full mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter your email">               
+                <label for="input" class="block text-xl font-bold text-[#131318] mt-6">Phone Number</label> 
+                <input type="number" id="input" class="outline-none block p-5 rounded-xl w-full lg:w-[324px] mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter Your Full Name"> 
+              </div>
+            </div>
+            <div>
+              <label for="message" class="block text-xl font-bold text-[#131318] mt-6">Message</label>
+              <textarea id="message" class="border border-public h-auto lg:h-[525px] w-full px-5 py-5 rounded-lg outline-none mt-4 bg-[#13131808]" placeholder="Write your message"></textarea>
+              <button class="w-full btn bg-btn-primary text-white">Send Message</button>
               </div>
             </div>
             </form>
           </div>
         </div>
+        <!-- social icon -->
+        <div class="bg-[#13131808] w-full rounded-xl text-center mt-12">
+          <h4 class="text-center text-2xl font-extrabold pt-9">Social Media</h4>
+          <ul class="flex justify-center gap-5 py-6">
+            <li class="text-xl"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="text-xl"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="text-xl"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="text-xl"><a href=""><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+        </div>
       </section>
     </main>
-    <!-- <footer class="mt-24 bg-[#131318]">
+    <!-- footer -->
+     <footer class="mt-24 bg-[#131318] py-24">
       <div
-        class="container mx-auto grid grid-cols-1 d:flex d:justify-between py-24"
+        class="flex flex-col lg:flex-row lg:justify-between px-10 lg:px-36"
       >
-        <div class="">
+        <div class="text-center lg:text-left">
           <h3 class="text-3xl font-extrabold text-[#fff]">Get In Touch</h3>
           <p class="w-80 font-medium mt-4 mb-6 text-[#fff9]">
             Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
             dolor. Purus urna in sit nullam proin.
           </p>
-          <div class="flex items-center gap-4 mb-4 text-[#fff9]">
+          <div class="flex items-center gap-4 mb-4 text-[#fff9] justify-center lg:justify-start">
             <i class="fa-solid fa-envelope text-btn-primary"></i>
             <p>hockeys@support.com</p>
           </div>
-          <div class="flex items-center gap-4 text-[#fff9]">
+          <div class="flex items-center gap-4 text-[#fff9] justify-center lg:justify-start">
             <i class="fa-solid fa-phone text-btn-primary"></i>
             <p>(+62) 123-321-543</p>
           </div>
         </div>
+        <!-- two in one -->
+        <div class="flex gap-12 lg:gap-96 justify-center mt-10 lg:mt-0">
         <div>
           <h3 class="text-d font-bold mb-7 text-white">Company</h3>
           <ul class="leading-10 text-[#fff9]">
@@ -582,7 +604,8 @@
             <li>Contact Us</li>
           </ul>
         </div>
-        <div>
+      </div>
+        <div class="text-center lg:text-left mt-12 lg:mt-0">
           <h3 class="text-lg font-bold mb-7 text-white">Services</h3>
           <ul class="leading-10 text-[#fff9]">
             <li>Academy</li>
@@ -593,6 +616,6 @@
           </ul>
         </div>
       </div>
-    </footer> -->
+    </footer> 
   </body>
 </html>
