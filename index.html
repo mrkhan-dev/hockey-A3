@@ -85,7 +85,7 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul
-              class="menu menu-horizontal px-1 font-normal gap-11 text-[#424247]"
+              class="menu menu-horizontal px-1 font-normal gap-11 text-[#424247] text-base"
             >
               <li class="text-btn-primary font-bold"><a>Home</a></li>
               <li><a>About</a></li>
@@ -130,7 +130,7 @@
           </div>
         </div>
         <div
-          class="bg-[#131318] text-white lg:w-[502px] rounded-xl p-5 mt-4 lg:p-8 lg:absolute bottom-8 right-8"
+          class="bg-[#131318] text-white lg:w-[502px] rounded-xl p-5 mt-4 lg:p-8 lg:absolute bottom-8 right-8 mx-2"
         >
           <h3 class="text-lg lg:text-2xl font-extrabold text-white">
             Meet all the heroes from the field
@@ -214,14 +214,40 @@
         <h2 class="text-center text-4xl font-extrabold">Program Sections</h2>
         <p class="font-medium text-center mt-6 lg:w-[607px] mx-auto text-para-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         <!-- program image -->
-        <div class="mt-8 border-dashed border-t-2 border-public">
-         <div class=" mt-12 flex flex-col lg:flex-row lg:justify-between gap-5">
-          <img class="w-auto lg:w-1/2" src="./Images/2.png" alt="">
-          <img class="w-auto lg:w-1/2" src="./Images/3.png" alt="">
-         </div>
-         <div class="mt-5">
-          <img class="w-auto lg:w-full" src="./Images/4.png" alt="">
-         </div>
+        <div class="mt-8 border-dashed border-t-2 border-public pt-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6 px-2 lg:px-0">
+          <div class="hero rounded-2xl col-span-2 lg:col-span-1 w-full mt-6 lg:h-auto " style="background-image: url(./Images/2.png);">
+            <div class="bg-opacity-60 rounded-2xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="text-left px-10 pb-10">
+                <h1 class="mb-5 text-3xl font-extrabold text-white -pt-1 lg:pt-24 ">Junior Program</h1>
+                <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn bg-btn-primary text-white border-none text-xl font-bold">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="hero rounded-2xl col-span-1 w-full mt-6 lg:h-auto " style="background-image: url(./Images/3.png);">
+            <div class=" bg-opacity-60 rounded-2xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="text-left px-10 pb-10">
+                <h1 class="mb-5 text-3xl font-extrabold text-white pt-1 lg:pt-24 ">Junior Program</h1>
+                <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn bg-btn-primary text-white border-none text-xl font-bold">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="hero rounded-2xl col-span-2 lg:h-[450px] mt-6" style="background-image: url(./Images/4.png);">
+            <div class=" bg-opacity-60 rounded-2xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="text-left pb-10">
+                <h1 class="mb-5 text-3xl font-extrabold text-white pt-1 lg:pt-24 text-left ">Junior Program</h1>
+                <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn bg-btn-primary text-white border-none text-xl font-bold">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
         </div>
         <!-- new products -->
         <section class="mt-24 border-dashed border-t-2 border-public py-8">
@@ -428,7 +454,7 @@
           <div class="c1 w-auto h-auto lg:w-5/12">
             <img src="./Images/11.png">
           </div>
-          <div class="c2 w-full mt-6 px-5 lg:px-16">
+          <div class="c2 w-full mt-6 px-1 lg:px-16">
             <!-- accordion 1 -->
             <div class="collapse collapse-plus rounded-none border-b-2 border-public">
               <input type="radio" name="my-accordion-3" checked="checked" /> 
@@ -539,7 +565,7 @@
                 <label for="input" class="block text-xl font-bold text-[#131318]">Your Email</label> 
                 <input type="text" id="input" class="outline-none block p-5 rounded-xl w-full mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter your email">               
                 <label for="input" class="block text-xl font-bold text-[#131318] mt-6">Phone Number</label> 
-                <input type="number" id="input" class="outline-none block p-5 rounded-xl w-full lg:w-[324px] mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter Your Full Name"> 
+                <input type="number" id="input" class="outline-none block p-5 rounded-xl w-full lg:w-[324px] mt-4 text-[#1313184D] bg-[#13131808]" placeholder="Enter your phone number"> 
               </div>
             </div>
             <div>
